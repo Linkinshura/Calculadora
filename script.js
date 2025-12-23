@@ -15,3 +15,8 @@ function calcular() {
         pantalla.value = "Error";
     }
 }
+
+function raiz() {
+    try {
+        pantalla.value = Math.sqrt(eval(pantalla.value));
+    } catch (error
