@@ -3,26 +3,33 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background: #f0f0f0;
+    background: #000; /* fondo negro */
     font-family: Arial, sans-serif;
 }
 
 .calculadora {
-    background: #222;
+    background: #1e1e1e;
     padding: 20px;
-    border-radius: 10px;
-    width: 260px;
+    border-radius: 15px;
+    width: 280px;
+
+    /* efecto para que destaque */
+    box-shadow: 
+        0 0 15px rgba(0, 255, 255, 0.4),
+        0 0 30px rgba(0, 255, 255, 0.2);
 }
 
 .pantalla {
     width: 100%;
-    height: 50px;
-    font-size: 24px;
-    margin-bottom: 10px;
+    height: 55px;
+    font-size: 26px;
+    margin-bottom: 15px;
     text-align: right;
-    padding: 5px;
+    padding: 8px;
     border: none;
-    border-radius: 5px;
+    border-radius: 8px;
+    background: #000;
+    color: #00ffff;
 }
 
 .botones {
@@ -32,15 +39,21 @@ body {
 }
 
 button {
-    height: 50px;
+    height: 55px;
     font-size: 18px;
     border: none;
-    border-radius: 5px;
+    border-radius: 8px;
     cursor: pointer;
+    transition: transform 0.1s, box-shadow 0.1s;
+}
+
+button:active {
+    transform: scale(0.95);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
 }
 
 .numero {
-    background: #444;
+    background: #333;
     color: white;
 }
 
@@ -50,13 +63,13 @@ button {
 }
 
 .igual {
-    background: #28a745;
+    background: #00c853;
     color: white;
     grid-column: span 2;
 }
 
 .clear {
-    background: #dc3545;
+    background: #d32f2f;
     color: white;
     grid-column: span 2;
 }
