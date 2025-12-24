@@ -3,7 +3,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background: #000; /* fondo negro */
+    background: #000; 
     font-family: Arial, sans-serif;
 }
 
@@ -12,8 +12,7 @@ body {
     padding: 20px;
     border-radius: 15px;
     width: 280px;
-
-    /* efecto para que destaque */
+    
     box-shadow: 
         0 0 15px rgba(0, 255, 255, 0.4),
         0 0 30px rgba(0, 255, 255, 0.2);
@@ -54,7 +53,7 @@ button:active {
 
 .numero {
     background: #333;
-    color: white;
+    color: #f5faff;
 }
 
 .operador {
